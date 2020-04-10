@@ -1,0 +1,21 @@
+<?php
+include_once('class/MyRectangle.php');
+include_once('class/Circle.php');
+include_once('class/Cylinder.php');
+include_once('class/Square.php');
+$circle = new Circle('hinh tron', 5);
+$cylinder = new Cylinder('hinh tru', 3, 4);
+$myRectangle = new MyRectangle('hinh chu nhat', 4, 3);
+$square = new Square('hinh vuong', 5, 5);
+echo $circle->show() . '<br>';
+echo 'Chu vi hinh tron la: ' . $circle->calculatePerimeter() . ' ';
+echo 'Dien tich hinh tron la: ' . $circle->calculateArea() . '<br>';
+echo $cylinder->show() . '<br>';
+echo 'Dien tich hinh tru la: ' . $cylinder->calculateArea() . ' ';
+echo 'Dien tich hinh tru la: ' . $cylinder->calculateVolume() . '<br>';
+echo $myRectangle->show() . '<br>';
+echo 'Chu vi hinh chu nhat la: ' . $myRectangle->calculatePerimeter() . ' ';
+echo 'Dien tich hinh chu nhat la: ' . $myRectangle->calculateArea() . '<br>';
+echo $square->show() . '<br>';
+echo 'Chu vi hinh vuong la: ' . $square->calculatePerimeter() . ' ';
+echo 'Dien tich hinh vuong la: ' . $square->calculateArea();
